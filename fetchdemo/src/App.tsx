@@ -9,25 +9,26 @@ const useImageURL = () => {
 
   useEffect(() => {
     // Simulando una primera solicitud de imagen
-    fetch("https://jsonplaceholder.typicode.com/photos/1", { mode: "cors" })
-      .then((response)=>{
-        if (response.status >= 400){
-          throw new Error("Server error!!");
-        }
-        return response.json();
-      })
-      .then((response) => {
-        console.log(response)
-        setImageURL(response.url)
-      })
-      .catch((error) => setError(error))
-      .finally(()=>setLoading(false));
+    Promise.all([
+      fetch("https://jsonplaceholder.typicode.com/photos/1", { mode: "cors" })
+        .then((response) => {
+          if (response.status >= 400) {
+            throw new Error("Server error!!");
+          }
+          return response.json();
+        })
+        .then((response) => {
+          console.log(response)
+          setImageURL(response.url)
+        })
+        .catch((error) => setError(error))
+        .finally(() => setLoading(false)),
 
-    // Simulando una segunda solicitud de imagen después de un retraso
-    setTimeout(() => {
+      // Simulando una segunda solicitud de imagen después de un retraso
+
       fetch("https://jsonplaceholder.typicode.com/photos/2", { mode: "cors" })
-        .then((response)=>{
-          if (response.status >= 400){
+        .then((response) => {
+          if (response.status >= 400) {
             throw new Error("Server error!!");
           }
           return response.json();
@@ -37,8 +38,8 @@ const useImageURL = () => {
           // Aquí solo estamos actualizando la URL de la imagen sin cambiar el estado de carga
           setImageURL(response.url)
         })
-        .catch((error) => setError(error));
-    }, 2000);
+        .catch((error) => setError(error)),
+    ])
   }, []);
 
   return { imageURL, error, loading };
