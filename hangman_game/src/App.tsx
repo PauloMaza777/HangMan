@@ -10,7 +10,8 @@ const fruts = ['apple', 'banana', 'cherry', 'date', 'grape', 'fig', 'kiwi', 'wat
 
 const words = [fruts, countries, figures, anatomy, office];
 
-const pistas = ["CATEGORIA DE FRUTAS", "CATEGORIA DE CIUDADES", "CATEGORIA DE FIGURAS", "CATEGORIA DE PARTES DEL CUERPO HUMANO", "CATEGORIA OBJETOS DE OFICINA"]
+const pistas = ["CATEGORIA DE FRUTAS", "CATEGORIA DE CIUDADES", "CATEGORIA DE FIGURAS",
+                "CATEGORIA DE PARTES DEL CUERPO HUMANO", "CATEGORIA OBJETOS DE OFICINA"]
 
 function App() {
 

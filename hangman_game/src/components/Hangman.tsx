@@ -53,7 +53,6 @@ const Hangman = ({ words, hint }: HangmanProps) => { //Esqueleto del componente
     }
 
     return (
-
         <div className="container2">
             <Reloj interval={1000} /> {/* Usa el componente Reloj */}
             <p className="pista">Pista: {hint}</p>
@@ -73,14 +72,9 @@ const Hangman = ({ words, hint }: HangmanProps) => { //Esqueleto del componente
             {displayWord.join('') === selectedWords && (
 
                 <p className="WIN">You win in this game</p>
-
             )}
         </div>
     )
-
-
-
-
 };
 
 export default Hangman;
