@@ -399,7 +399,7 @@ En esta solución, las partes de la aplicación se muestran a medida que sus dat
 
 Ambas soluciones tienen sus ventajas y desventajas, pero permiten evitar las cascadas de solicitudes que ralentizan la carga de la aplicación y mejoran la experiencia del usuario.
 
-## Qué pasa con el suspenso
+## Qué pasa con el suspense
 
 Suspense es una característica experimental de React para manejar estados de carga de manera más elegante. Sin embargo, su uso en producción no es recomendable porque sigue siendo experimental. Además, Suspense no resuelve problemas fundamentales como las limitaciones de los recursos del navegador, el ciclo de vida de React y las cascadas de solicitudes (request waterfalls).
 
