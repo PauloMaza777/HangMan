@@ -27,7 +27,7 @@ INGENIERÍA EN SISTEMAS COMPUTACIONALES
 - [Limitaciones del navegador y obtención de datos](#limitaciones-del-navegador-y-obtención-de-datos)
 - [Solicitudes cascadas, ¿Cómo aparecen?](#solicitudes-cascadas-cómo-aparecen)
 - [Cómo resolver solicitudes en cascada](#cómo-resolver-solicitudes-en-cascada)
-- [¿Qué pasa con el suspenso?](#qué-pasa-con-el-suspenso)
+- [¿Qué pasa con el suspense?](#qué-pasa-con-el-suspense)
 
 ## Tipos de obtención de datos
 
