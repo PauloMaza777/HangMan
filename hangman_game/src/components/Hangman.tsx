@@ -22,7 +22,7 @@ const Hangman = ({ words, hint }: HangmanProps) => { //Esqueleto del componente
     const [guessdLetters, setGuessedLetters] = useState<string[]>([]);
     const [errorCount, setErrorCount] = useState(0);
 
-    const displayWord = selectedWords.split('').map((letter, index) => {
+    const displayWord = selectedWords.split('').map((letter) => {
         <div></div>
         console.log("SelectWord: ", selectedWords)
         if (guessdLetters.includes(letter)) {

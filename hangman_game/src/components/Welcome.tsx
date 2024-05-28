@@ -1,6 +1,5 @@
 import hangman from '../img/hangman2.png';
 import '../css/Welcome.css'
-import React from 'react';
 
 interface welcomeProps {
     onStart: () => void; // Definimos la interfaz para onStart
