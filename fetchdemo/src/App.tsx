@@ -1,7 +1,5 @@
-// import { useState, useEffect } from 'react'
-// import './App.css'
-
-import { useState } from "react";
+ import { useState, useEffect } from 'react'
+ import './App.css'
 
 // const useImageURL = () => {
 //   const [imageURL, setImageURL] = useState(null);
@@ -64,16 +62,18 @@ import { useState } from "react";
 // }
 
 const App = () => {
-  const [heading, setHeading] = useState("Default state");
+  const [heading, setHeading] = useState("Defaul state");
 
-  const clickHandler = () =>{
-    setHeading("New text!!")
+  const clickHandler = () => {
+    setHeading("New text !!")
   };
 
-  return(
+  return (
     <>
-    <button type="button" onClick={clickHandler}>Click me</button>
-    <h1>{heading}</h1>
+      <button type='button' onClick={clickHandler}>
+        Click me!!
+      </button>
+      <h1>{heading}</h1>
     </>
   );
 }
